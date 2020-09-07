@@ -24,14 +24,19 @@
     cursor: pointer; 
 }
 
-.TaskContainer{
+.Container{
     width: 400px;
     height: 50px;
-    background-color: #ffcccb;
+    background-color: white;
     margin: 0 auto; 
 }
 
-
+.TaskContainer{
+    width: 400px;
+    height: 50px;
+    background-color: gray;
+    margin: 0 auto; 
+}
 
 .txtTask{
     width: 303px;
