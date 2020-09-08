@@ -36,7 +36,6 @@ class Task{
 
         RemoveButton.addEventListener("click", () => this.remove(TaskBox));
     }
-
     remove(Task){
         TaskFrame.removeChild(Task);
     }
@@ -48,6 +47,5 @@ function check(){
         Input.value = "";
     }
 }
-
 
 AddButton.addEventListener("click",check);
