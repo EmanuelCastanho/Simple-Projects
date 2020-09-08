@@ -3,9 +3,9 @@
  * @author Emanuel Castanho
 */
 
-const addButton = document.querySelector(".add");
-var input = document.querySelector(".txtInput");
-const taskContainer = document.querySelector(".Container");
+const AddButton = document.querySelector(".InputAdd");
+var Input = document.querySelector(".InputTxt");
+const TaskFrame = document.querySelector(".TaskContainer");
 
 class Task{
     constructor(TaskName){
@@ -13,41 +13,41 @@ class Task{
     }
     createDiv(TaskName){
 
-        let checkButton = document.createElement("input");
-        checkButton.type = "checkbox";
+        let CheckButton = document.createElement("input");
+        CheckButton.type = "checkbox";
 
         let TaskBox = document.createElement("div");
-        TaskBox.classList.add("TaskContainer");
+        TaskBox.classList.add("TaskContainerChange");
 
-        let input = document.createElement("input");
-        input.value = TaskName;
-        input.disabled = true;
-        input.classList.add("txtTask");
-        input.type = "text";
+        let InputBox = document.createElement("input");
+        InputBox.value = TaskName;
+        InputBox.disabled = true;
+        InputBox.classList.add("TaskTxt");
+        Input.type = "text";
 
-        let removeButton = document.createElement("button");
-        removeButton.classList.add("buttonTask");
-        removeButton.innerHTML = "🗑️";
+        let RemoveButton = document.createElement("button");
+        RemoveButton.classList.add("TaskRemove");
+        RemoveButton.innerHTML = "🗑️";
 
-        taskContainer.appendChild(TaskBox);
-        TaskBox.appendChild(checkButton);
-        TaskBox.appendChild(input);
-        TaskBox.appendChild(removeButton);
+        TaskFrame.appendChild(TaskBox);
+        TaskBox.appendChild(CheckButton);
+        TaskBox.appendChild(InputBox);
+        TaskBox.appendChild(RemoveButton);
 
-        removeButton.addEventListener("click", () => this.remove(TaskBox));
+        RemoveButton.addEventListener("click", () => this.remove(TaskBox));
     }
 
     remove(Task){
-        taskContainer.removeChild(Task);
+        TaskFrame.removeChild(Task);
     }
 }
 
 function check(){
-    if (input.value != "") {
-        new Task(input.value);
-        input.value = "";
+    if (Input.value != "") {
+        new Task(Input.value);
+        Input.value = "";
     }
 }
 
 
-addButton.addEventListener("click",check);
+AddButton.addEventListener("click",check);
