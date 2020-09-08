@@ -1,10 +1,13 @@
 
-
 # Simple-Projects
+
+![GitHub repo size](https://img.shields.io/github/repo-size/EmanuelCastanho/Simple-Projects)
+![GitHub language count](https://img.shields.io/github/languages/count/EmanuelCastanho/Simple-Projects)
+![GitHub top language](https://img.shields.io/github/languages/top/EmanuelCastanho/Simple-Projects)
 
 Projects developed to help in the continuous learning of several programming languages.
 
-In this repository I present several projects, feel free to contribute.
+Feel free to contribute.
 
 ### ToDo List
 
