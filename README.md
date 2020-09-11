@@ -21,4 +21,4 @@ In Construction!
 
 ## Licence
 
-This project is licensed under the MIT License.
+Projects licensed under the MIT License.
