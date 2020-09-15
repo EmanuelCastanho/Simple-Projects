@@ -1,5 +1,5 @@
 
-# Simple-Projects
+# Simple Projects
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/EmanuelCastanho/Simple-Projects)
 ![GitHub language count](https://img.shields.io/github/languages/count/EmanuelCastanho/Simple-Projects)
